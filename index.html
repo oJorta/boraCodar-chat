@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat responsivo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <div id="contact-info">
+            <img src="assets/Foto.png" class="profile-pic" alt="">
+
+            <div id="name-and-status">
+                <p class="contact-name">Cecilia Sassaki</p>
+                <div class="status">
+                    <img src="assets/online.svg" alt="">
+                    <p class="p-regular online">online</p>
+                </div>
+            </div>
+
+            <img src="assets/close.svg" class="close-button" onclick="deleteChat()" alt="">
+        </div>
+
+        
+        <div class="chat">
+            <p class="chat-date p-regular">Hoje 11:30</p>
+
+            <div class="message received">
+                <p class="p-regular">Cecilia - 11:30</p>
+                <p class="message-content p-regular">Tive uma ideia incrível para um projeto! 😍</p>
+            </div>
+
+            <div class="message sent">
+                <p class="p-regular">Você - 11:32</p>
+                <p class="message-content p-regular">Sério? Me conta mais.</p>
+            </div>
+
+            <div class="message received">
+                <p class="p-regular">Cecilia - 11:30</p>
+                <p class="message-content p-regular">E se a gente fizesse um chat moderno e responsivo em apenas uma semana?</p>
+            </div>
+
+            <div class="message sent">
+                <p class="p-regular">Você - 11:32</p>
+                <p class="message-content p-bold">#boraCodar! 🚀</p>
+            </div>
+        </div>
+
+        <div class="message-input">
+            <form onsubmit="addNewMessage(event)">
+                <input type="text" name="message" id="message" class="p-regular" placeholder="Digite sua mensagem" autocomplete="off">
+                <button type="submit" id="send-message">
+                    <img src="assets/send.svg" alt="">
+                </button>
+            </form>
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
