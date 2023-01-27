@@ -16,7 +16,7 @@ This app is a chat simulation based on #boraCodar 4th Weekly Challenge. <br>
 - localStorage
 
 # 🌐 Project
-[Access the project](https://ojorta.github.io/nlw-setup/) 😁
+[Access the project](https://ojorta.github.io/boraCodar-chat/) 😁
 
 # 🖌️ Layout
 You can access the project's layout at [FIGMA](https://www.figma.com/file/kt3T9CUAdoqAKP7xR9Fbv0/%23boraCodar---Desafio-4-(Community)?node-id=1%3A34&t=MYcfH0rayODYBC0h-0).
