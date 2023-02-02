@@ -1,13 +1,17 @@
 * {
   margin: 0;
   padding: 0;
-
   box-sizing: border-box;
 }
 
+:root{
+  font-size: 62.5%;
+}
+
 body {
+  font-size: 1.6rem;
   height: 100vh;
-  padding: 32px 72px;
+  padding: 2.4rem 3.2rem;
   background-color: var(--bg-color);
 }
 
@@ -24,8 +28,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
+  max-width: 88rem;
   height: 100%;
+  margin: auto;
   font-family: "Roboto";
 }
 
@@ -33,13 +38,15 @@ body {
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  height: 48px;
-  gap: 16px;
+  height: 4.8rem;
+  /* height: max-content; */
+  gap: 1.6rem;
 }
 
 .profile-pic{
-  width: 48px;
+  width: 4.8rem;
   height: auto;
+  border-radius: 100%;
 }
 
 #name-and-status {
@@ -54,12 +61,16 @@ body {
 
 .message-input {
   width: 100%;
-  min-height: 52px;
-  margin-top: 24px;
-  padding: 14px 24px;
+  min-height: 5.2rem;
+  margin-top: 2.4rem;
+  padding: 1.4rem 2.4rem;
   box-sizing: border-box;
   background-color: var(--form-background);
   border-radius: 999px;
+}
+
+.message-input:focus-within{
+  outline: 2px solid var(--text-white);
 }
 
 form {
@@ -83,19 +94,16 @@ form input {
 
 .contact-name {
   font-weight: 700;
-  font-size: 16px;
   color: var(--text-white);
 }
 
 .p-regular {
   color: var(--text-white);
-  font-size: 0.75rem;
   font-weight: 400;
 }
 
 .p-bold {
   color: var(--text-white);
-  font-size: 0.75rem;
   font-weight: 700;
 }
 
@@ -105,11 +113,24 @@ form input {
 }
 
 .online {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 4px;
   color: #00b37e;
 }
 
+.online::before{
+  content: '';
+  width: .8rem;
+  height: .8rem;
+  display: block;
+  background-color: #00b37e;
+  border-radius: 100%;
+}
+
 .chat-date {
-  margin-top: 14px;
+  margin-top: 1.4rem;
   text-align: center;
 }
 
@@ -122,7 +143,7 @@ form input {
 }
 
 .message {
-  margin-top: 30px;
+  margin-top: 3rem;
 }
 
 .message-content {
@@ -152,6 +173,7 @@ form input {
 }
 
 ::-webkit-scrollbar {
+  /* display: none; */
   width: 6px;
 }
 
@@ -168,8 +190,8 @@ form input {
   background: var(--scrollbar-hover);
 }
 
-@media only screen and (max-width: 480px) {
+/* @media only screen and (max-width: 480px) {
   body{
     padding: 24px 32px;
   }
-}
+} */

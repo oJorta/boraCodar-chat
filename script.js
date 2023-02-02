@@ -153,5 +153,5 @@ function load(){
             chatArea.appendChild(loadedMessage)
         });
     }
-    chatArea.scrollTop = chatArea.scrollHeight
+    chatArea.lastElementChild.scrollIntoView()
 }
